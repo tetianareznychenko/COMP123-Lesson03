@@ -23,15 +23,43 @@ namespace COMP_123_Lesson03
         public static void Main(string[] args)
         {
             //create a new istance of the Person class
-            Person person = new Person();
 
-            Console.WriteLine(person.Name);
+            Person iryna = new Person();
+            iryna.Name = "Iryna";
+            iryna.Age = 24;
+            iryna.SaysHello();
+            iryna.ShowAge();
+
+            Console.WriteLine();
+
+            Person tetiana = new Person("Tetiana");
+            tetiana.Age = 23;
+            tetiana.SaysHello();
+            tetiana.ShowAge();
+
+            Console.WriteLine();
+
+            Person chris = new Person(30);
+            chris.Name = "Chris";
+            chris.SaysHello();
+            chris.ShowAge();
+
+
+            Console.WriteLine();
+
+            Person adam = new Person("Adam", 16);
+            adam.SaysHello();
+            adam.ShowAge(); 
+
+
+
+            //Console.WriteLine(person.Name);
 
             //Set a value in the Name property of the Person class
-            person.Name = "Tetiana";
+            //person.Name = "Tetiana";
 
             //get the Name value and print to console
-            Console.WriteLine(person.Name);
+            //Console.WriteLine(person.Name);
         }
     }
 }
